@@ -7,12 +7,12 @@
 
 # user is already defined
 HOST=$(hostname)
-OS=$(crux)
+OS=$(cat /etc/*-release | grep ^NAME= | cut -d '"' -f 2)
 KERNEL=$(uname -sr)
 UPTIME=$(uptime -p | sed s:"up "::)
-PACKAGES=$(pkginfo -i | wc -l)
-# shell is already defined
-WM=$(tail -n 1 "${HOME}/.xinitrc" | cut -d " " -f2)
+PACKAGES=$(pacman -Q | wc -l)
+SHELL=$(echo $SHELL | cut -d '/' -f 4)
+WM=$(echo $GDMSESSION)
 
 ## DEFINE COLORS
 

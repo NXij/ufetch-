@@ -1,5 +1,6 @@
 # ufetch
-Tiny system info for CRUX and Arch Linux.
+Tiny system info for Arch Linux, and anything else using Pacman as package manager.
+Utilizes the original ufetch duck art and uses vars to retreive information if Joe's ufetch 
+fails.
 
-![](http://a.pomf.se/wyaxfq.png)
-![](http://a.pomf.se/mjtmkr.png)
+![](http://a.pomf.se/tbsmpy.png)
