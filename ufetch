@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# ufetch - tiny system info for crux
+# ufetch - tiny system info for Pacman based distros.
 #
 
 ## INFO
